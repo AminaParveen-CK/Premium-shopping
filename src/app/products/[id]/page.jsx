@@ -1,5 +1,3 @@
-// src/app/product/[id]/page.jsx
-
 import React from "react";
 
 // Dynamic Product Detail Page
@@ -11,7 +9,7 @@ const ProductDetail = async ({ params }) => {
       cache: "no-store",
     });
 
-    // Check if response is OK (status 200–299)
+    // Check if response is OK
     if (!res.ok) {
       console.error(`API returned status ${res.status}`);
       throw new Error("Failed to fetch product");
@@ -25,8 +23,8 @@ const ProductDetail = async ({ params }) => {
     }
 
     return (
-      <div className="w-[80%] h-[90vh] m-auto grid grid-cols-1 md:grid-cols-2 p-2">
-        <div className="w-[50%} m-4 flex flex-col justify-center">
+    <div className="w-[80%] h-[90vh] m-auto grid grid-cols-1 md:grid-cols-2 p-2">
+      <div className="w-[50%} m-4 flex flex-col justify-center">
         <img src={product.image} alt={product.title} className="w-[65%]"/>
         </div>
         <div className="flex flex-col justify-center space-y-5 m-4">
@@ -34,8 +32,8 @@ const ProductDetail = async ({ params }) => {
         <p style={{ marginTop: "1rem" }}>{product.description}</p>
         <p style={{ marginTop: "0.5rem", fontWeight: "bold" }}>₹{product.price}</p>
         
-        </div>
       </div>
+    </div>
     );
 
   } catch (error) {

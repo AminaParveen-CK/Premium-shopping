@@ -30,15 +30,15 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <AuthProvider>
           <CartProvider>
-          <WishlistProvider>
-            <ThemeProvider attribute="class" enableSystem defaultTheme="system">
-            <Layout>
-            <div className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen">
-              {children}
-            </div>
-            </Layout>
-            </ThemeProvider>
-          </WishlistProvider>
+            <WishlistProvider>
+              <ThemeProvider attribute="class" enableSystem defaultTheme="system">
+               <Layout>
+                <div className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen">
+                 {children}
+                </div>
+               </Layout>
+              </ThemeProvider>
+            </WishlistProvider>
           </CartProvider>
         </AuthProvider>
     </body>

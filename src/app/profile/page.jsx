@@ -5,7 +5,7 @@ import { collection, getDocs, query, where, doc, getDoc } from "firebase/firesto
 import { useWishlist } from "@/context/WishlistContext"; // Use Wishlist Context
 
 export default function ProfilePage() {
-  const { wishlistItems, removeFromWishlist } = useWishlist(); // Make sure this is working now
+  const { wishlistItems, removeFromWishlist } = useWishlist(); 
   const [orderHistory, setOrderHistory] = useState([]);
   const [loading, setLoading] = useState(true);
 

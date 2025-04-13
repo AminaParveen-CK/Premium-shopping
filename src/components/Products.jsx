@@ -13,7 +13,7 @@ export default function Products({ products }) {
   console.log(products);
   
 
-   {/* ======Sort-Products====== */}
+    // ======Sort-Products====== 
    const sortProducts = (order) => {
     const sortedProducts = [...products]?.sort((a, b) => {
       if (order === 'lowToHigh') {
@@ -26,7 +26,7 @@ export default function Products({ products }) {
     setfilteredProduct(sortedProducts);
   };
 
-  {/* ======Filter Category====== */}
+  // ======Filter Category====== 
   const selectCategory = (cat) => {
     if (cat === 'none') {
       setfilteredProduct(products); // Show all products if no category is selected
@@ -35,14 +35,14 @@ export default function Products({ products }) {
     }
   }
   
-  {/* ======Sort-Order Selection====== */}
+//======Sort-Order Selection====== 
   const handleSortChange = (e) => {
     const order = e.target.value;
     setsortOrder(order); 
     sortProducts(order); 
   };
 
-  {/* ======filter-Order Selection====== */}
+//======filter-Order Selection====== 
   const handlefilterChange = (e) => {
     const order = e.target.value;
     setfilterOrder(order); 
@@ -60,7 +60,7 @@ export default function Products({ products }) {
     <>
     <div className='w-[85%] m-auto flex justify-between '>
     <div>
-        {/* ======Sort-Select====== */}
+      {/* ======Sort-Select======  */}
        <form className='sort-select'>
         <select 
           as="select" 
@@ -77,7 +77,7 @@ export default function Products({ products }) {
     </div>
 
     <div>
-        {/* ======category select====== */}
+      {/* ======category select======  */}
        <form className='sort-select'>
         <select 
           as="select" 
