@@ -291,6 +291,7 @@ export const CartProvider = ({ children }) => {
       );
     } else {
       updatedCart = [...cartItems, { ...product, quantity: 1 }];
+      alert('Added to Cart');
     }
 
     setCartItems(updatedCart);

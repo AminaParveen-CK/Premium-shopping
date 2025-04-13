@@ -5,6 +5,7 @@ import Layout from "@/components/Layout";
 import { CartProvider } from "@/context/CartContext"; // import CartProvider
 import { AuthProvider } from "@/context/AuthContext";
 import { WishlistProvider } from "@/context/WishlistContext";
+import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,13 +25,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   return (
-    <html lang="en" className="">
+    <html lang="en" suppressHydrationWarning>
 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <AuthProvider>
           <CartProvider>
           <WishlistProvider>
-            <Layout>{children}</Layout>
+            <ThemeProvider attribute="class" enableSystem defaultTheme="system">
+            <Layout>
+            <div className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen">
+              {children}
+            </div>
+            </Layout>
+            </ThemeProvider>
           </WishlistProvider>
           </CartProvider>
         </AuthProvider>

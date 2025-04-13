@@ -34,7 +34,7 @@ export default function CartPage() {
 
   return (
 
-    <div className="max-w-6xl mx-auto mt-8 p-4" 
+    <div className="max-w-6xl mx-auto mt-8 p-4 bg-white text-black dark:bg-gray-900 dark:text-white" 
          onDrop={handleDrop}
          onDragOver={handleDragOver} >
     <h1 className="text-2xl font-bold mb-6">Shopping Cart</h1>

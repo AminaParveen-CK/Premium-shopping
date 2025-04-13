@@ -19,7 +19,7 @@ console.log(user);
     };
 
   return (
-    <nav className=" dark:bg-gray-900 dark:text-white shadow-md p-4">
+    <nav className="bg-white text-black dark:bg-gray-900 dark:text-white shadow-md p-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-gray-800 dark:text-white">
           PremiumShop
@@ -41,8 +41,6 @@ console.log(user);
       <Link href="/login" className="text-gray-600 dark:text-gray-300 hover:underline">Login</Link>
     </>
   )}
-          {/* <Link href="/auth/signup" className="text-gray-600 dark:text-gray-300 hover:underline">SignUp</Link>
-          <Link href="/login" className="text-gray-600 dark:text-gray-300 hover:underline">Login</Link> */}
         </div>
       </div>
     </nav>
