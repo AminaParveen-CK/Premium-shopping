@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Premium Shopping
 
-## Getting Started
+This Next application is an ecommerce platform which displays a list of products and allows users to filter and sort them based on various criteria.Users can signup login and add products to cart and checkout to make orders.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Display a list of products with details like name, price, and rating.
+- Filter products by category.
+- Sort products by price.
+- Add products to cart and checkout by giving shipping and payment info.
+- Details page for each product.
+- Pagination to handle products list
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Prerequisites
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Node.js v14 or later
+- npm v6 or later
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
 
-## Learn More
+In the project directory, you can run:
 
-To learn more about Next.js, take a look at the following resources:
+### `npm run dev`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The page will reload when you make changes.\
 
-## Deploy on Vercel
+### `npm test`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Launches the test runner in the watch mode.\
+Used to run unit tests (if implemented).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+## Installation
+
+1. Clone the repository:
+
+   git clone https://github.com/AminaParveen-CK/Premium-shopping
+
+2. Navigate to the project directory:
+
+   cd premium-shopping
+
+3. Install dependencies:
+
+   npm install
+
+4. Start the app:
+
+   npm run dev
+   The app will be available at http://localhost:3000.
+
+
+## Technologies Used
+
+- Next js
+- App router
+- Fetch
+- Tailwind CSS for styling
+- Shadcn Ui
+- Lucide icons
+
+## Usage
+
+- Use signup or login button to login
+- Open the application in your browser at http://localhost:3000.
+- Use the sort dropdown to order products by criteria like price low to high and high to low.
+- Use the filter bar to narrow down products based on Categories.
+- Click add to button to add to cart and checkout
+
+## Contact
+
+For questions or feedback, reach out to aminaparveenck@gmail.com
+
+
+
